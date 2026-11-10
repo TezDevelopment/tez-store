@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<style>html,body{background:linear-gradient(160deg,#0a0f1d,#1a1428)!important}</style>
+<meta charset="utf-8">
+<title>Glam Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="toasts" class="toasts"></div>
+<div id="popup" class="popup hidden"></div>
+<div id="levelup" class="levelup hidden"></div>
+<div id="selldisplay" class="selldisplay hidden"></div>
+<div id="customer" class="customer hidden"></div>
+<div id="chase" class="chase hidden"></div>
+<div id="progress" class="progress hidden"></div>
+
+<!-- the hub window -->
+<div id="app" class="app hidden">
+  <aside class="rail" id="rail"></aside>
+  <main class="main">
+    <header class="head">
+      <div class="head-left">
+        <h1 class="title" id="page-title">Glam Hub</h1>
+        <p class="subtitle" id="page-sub"></p>
+      </div>
+      <div class="head-actions">
+        <div id="head-chips" class="chips-row"></div>
+        <button id="btn-notif" class="icon-btn" title="Notifications" aria-label="Notifications"></button>
+        <button id="btn-close" class="icon-btn" title="Close (Esc)" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </header>
+    <section id="page" class="page"></section>
+  </main>
+  <div id="notif-panel" class="notif-panel hidden"></div>
+</div>
+
+<div id="tour" class="tour hidden"></div>
+<div id="modal" class="modal hidden"></div>
+<div id="lightbox" class="lightbox hidden"></div>
+
+<script src="mock.js"></script>
+<script src="core.js"></script>
+<script src="overlays.js"></script>
+<script src="menu.js"></script>
+<script src="hub1.js"></script>
+<script src="hub2.js"></script>
+<script src="hub3.js"></script>
+<script src="admin.js"></script>
+<script src="demo-boot.js"></script>
+</body>
+</html>

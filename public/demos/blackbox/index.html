@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<style>html,body{background:linear-gradient(160deg,#0f1623,#1b1530)!important}</style>
+<meta charset="utf-8">
+<title>Blackbox Reports</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="toasts" class="toasts"></div>
+<div id="prompt" class="prompt hidden"></div>
+<div id="alerts" class="alerts"></div>
+<div id="panic" class="panic-ring hidden"></div>
+<div id="warned" class="warned hidden"></div>
+
+<div id="app" class="app hidden">
+  <header class="bar">
+    <div class="brand"><i></i><b id="brand-name">BLACKBOX</b></div>
+    <nav class="rail" id="rail"></nav>
+    <div class="bar-right">
+      <div id="head-chips" class="chips-row"></div>
+      <button id="btn-close" class="icon-btn" title="Close (Esc)" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </header>
+  <div class="titlebar">
+    <h1 class="title" id="page-title">Report</h1>
+    <p class="subtitle" id="page-sub"></p>
+  </div>
+  <section id="page" class="page"></section>
+</div>
+
+<div id="modal" class="modal hidden"></div>
+<div id="lightbox" class="lightbox hidden"></div>
+
+<script src="demo-schema.js"></script>
+<script src="mock.js"></script>
+<script src="core.js"></script>
+<script src="overlays.js"></script>
+<script src="shell.js"></script>
+<script src="player.js"></script>
+<script src="replay.js"></script>
+<script src="desk.js"></script>
+<script src="insight.js"></script>
+<script src="admin.js"></script>
+<script src="demo-boot.js"></script>
+</body>
+</html>
