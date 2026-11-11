@@ -116,6 +116,33 @@ export const PRODUCTS: Product[] = [
     resource: 'blue_squads',
     changelog: [{ v: '2.0.0', date: 'November 2026', notes: ['Rebuilt interface with a blue theme.', 'Live squad HUD, nametags and the ping wheel.', 'KOS wars, bounties, squad bank, abilities and leaderboards.', 'Live admin panel with no restarts.'] }],
   },
+  {
+    slug: "police-mdt",
+    name: "Police MDT",
+    category: "Everyday Scripts",
+    tagline: "A full police MDT with warrants, reports, evidence and records, built for ESX Legacy.",
+    description: "A full police MDT with warrants, reports, evidence and records, built for ESX Legacy.",
+    price: 44.99,
+    version: '1.0.0',
+    updated: "November 2026",
+    badge: 'New',
+    frameworks: ['ESX'],
+    requires: ['oxmysql'],
+    features: [
+      { title: "Warrant workflow", text: "request, approve and serve" },
+      { title: "Reports with versions and comments", text: "" },
+      { title: "Evidence with chain of custody", text: "" },
+      { title: "Citizen and vehicle records", text: "" },
+      { title: "Roles and permissions per rank", text: "" },
+      { title: "Full audit log of every action", text: "" },
+    ],
+    shots: ['01'],
+    video: "/video/police-mdt.mp4",
+    poster: "/img/police-mdt/01.webp",
+    demo: false,
+    resource: "police_mdt",
+    changelog: [{ v: '1.0.0', date: "November 2026", notes: ['First release.'] }],
+  },
 ];
 
 export const CATEGORIES = ['Everyday Scripts', 'Gang Series', 'Admin Tools'] as const;
