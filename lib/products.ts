@@ -143,6 +143,33 @@ export const PRODUCTS: Product[] = [
     resource: "police_mdt",
     changelog: [{ v: '1.0.0', date: "November 2026", notes: ['First release.'] }],
   },
+  {
+    slug: "tez-injuries",
+    name: "Tez Injuries",
+    category: "Everyday Scripts",
+    tagline: "Realistic gunshot injuries with a bleed-out clock for ESX servers.",
+    description: "Realistic gunshot injuries with a bleed-out clock for ESX servers.",
+    price: 29.99,
+    version: '1.0.0',
+    updated: "November 2026",
+    badge: 'New',
+    frameworks: ['ESX'],
+    requires: ['oxmysql'],
+    features: [
+      { title: "Leg hits make you limp", text: "" },
+      { title: "Shoulder hits drop you and lock your gun", text: "" },
+      { title: "Stomach hits drop you and you hold it", text: "" },
+      { title: "10 minute bleed-out clock", text: "" },
+      { title: "Bandage or EMS patch-up", text: "" },
+      { title: "Saved when you log out", text: "" },
+    ],
+    shots: ['01'],
+    video: "/video/tez-injuries.mp4",
+    poster: "/img/tez-injuries/01.webp",
+    demo: false,
+    resource: "tez_injuries",
+    changelog: [{ v: '1.0.0', date: "November 2026", notes: ['First release.'] }],
+  },
 ];
 
 export const CATEGORIES = ['Everyday Scripts', 'Gang Series', 'Admin Tools'] as const;
